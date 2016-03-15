@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LojasViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)Pesquisar{
+    NSLog(@"Papai Program IOS");
+    
+    LojasViewController *lojas = [[LojasViewController alloc] initWithNibName:@"LojasViewController" bundle:nil];
+    [self presentViewController:lojas animated:YES completion:^{
+        lojas.txt.text = @"Em breve Funcionando";
+    }];
+    
 }
 
 @end

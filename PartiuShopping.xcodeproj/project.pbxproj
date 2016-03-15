@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2493661C97973300B3B748 /* IMG_0055.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1D2493651C97973300B3B748 /* IMG_0055.PNG */; };
+		1D2493691C97999600B3B748 /* LojaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2493681C97999600B3B748 /* LojaCell.m */; };
+		1D24936B1C9799C300B3B748 /* LojaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D24936A1C9799C300B3B748 /* LojaCell.xib */; };
 		1D7C85171C937A0C008309B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C85161C937A0C008309B7 /* main.m */; };
 		1D7C851A1C937A0C008309B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C85191C937A0C008309B7 /* AppDelegate.m */; };
 		1D7C851D1C937A0C008309B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C851C1C937A0C008309B7 /* ViewController.m */; };
 		1D7C85201C937A0C008309B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C851E1C937A0C008309B7 /* Main.storyboard */; };
 		1D7C85221C937A0C008309B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C85211C937A0C008309B7 /* Assets.xcassets */; };
 		1D7C85251C937A0C008309B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C85231C937A0C008309B7 /* LaunchScreen.storyboard */; };
+		1D7C85331C937DC9008309B7 /* LojasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C85311C937DC9008309B7 /* LojasViewController.m */; };
+		1D7C85341C937DC9008309B7 /* LojasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C85321C937DC9008309B7 /* LojasViewController.xib */; };
+		1D7D2C591C93A96700C5F400 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D2C581C93A96700C5F400 /* logo.jpg */; };
+		1D7D2C5B1C93AAEE00C5F400 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D2C5A1C93AAEE00C5F400 /* logo2.png */; };
+		1D7D2C5D1C945D7600C5F400 /* Lojas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D2C5C1C945D7600C5F400 /* Lojas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2493651C97973300B3B748 /* IMG_0055.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0055.PNG; path = ../../../../../Pictures/IMG_0055.PNG; sourceTree = "<group>"; };
+		1D2493671C97999600B3B748 /* LojaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LojaCell.h; path = ../LojaCell.h; sourceTree = "<group>"; };
+		1D2493681C97999600B3B748 /* LojaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LojaCell.m; path = ../LojaCell.m; sourceTree = "<group>"; };
+		1D24936A1C9799C300B3B748 /* LojaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LojaCell.xib; path = ../LojaCell.xib; sourceTree = "<group>"; };
 		1D7C85121C937A0C008309B7 /* PartiuShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartiuShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7C85161C937A0C008309B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D7C85181C937A0C008309B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +38,13 @@
 		1D7C85211C937A0C008309B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7C85241C937A0C008309B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7C85261C937A0C008309B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7C85301C937DC9008309B7 /* LojasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LojasViewController.h; sourceTree = "<group>"; };
+		1D7C85311C937DC9008309B7 /* LojasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LojasViewController.m; sourceTree = "<group>"; };
+		1D7C85321C937DC9008309B7 /* LojasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LojasViewController.xib; sourceTree = "<group>"; };
+		1D7D2C581C93A96700C5F400 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = ../../../../../Downloads/logo.jpg; sourceTree = "<group>"; };
+		1D7D2C5A1C93AAEE00C5F400 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = ../../../../../Downloads/logo2.png; sourceTree = "<group>"; };
+		1D7D2C5C1C945D7600C5F400 /* Lojas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lojas.m; sourceTree = "<group>"; };
+		1D7D2C5E1C945D8A00C5F400 /* Lojas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lojas.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,10 @@
 		1D7C85141C937A0C008309B7 /* PartiuShopping */ = {
 			isa = PBXGroup;
 			children = (
+				1D24936A1C9799C300B3B748 /* LojaCell.xib */,
+				1D2493671C97999600B3B748 /* LojaCell.h */,
+				1D2493681C97999600B3B748 /* LojaCell.m */,
+				1D7D2C571C93A94900C5F400 /* assets */,
 				1D7C85181C937A0C008309B7 /* AppDelegate.h */,
 				1D7C85191C937A0C008309B7 /* AppDelegate.m */,
 				1D7C851B1C937A0C008309B7 /* ViewController.h */,
@@ -67,6 +90,8 @@
 				1D7C85231C937A0C008309B7 /* LaunchScreen.storyboard */,
 				1D7C85261C937A0C008309B7 /* Info.plist */,
 				1D7C85151C937A0C008309B7 /* Supporting Files */,
+				1D7D2C5C1C945D7600C5F400 /* Lojas.m */,
+				1D7D2C5E1C945D8A00C5F400 /* Lojas.h */,
 			);
 			path = PartiuShopping;
 			sourceTree = "<group>";
@@ -75,8 +100,21 @@
 			isa = PBXGroup;
 			children = (
 				1D7C85161C937A0C008309B7 /* main.m */,
+				1D7C85301C937DC9008309B7 /* LojasViewController.h */,
+				1D7C85311C937DC9008309B7 /* LojasViewController.m */,
+				1D7C85321C937DC9008309B7 /* LojasViewController.xib */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D7D2C571C93A94900C5F400 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1D2493651C97973300B3B748 /* IMG_0055.PNG */,
+				1D7D2C5A1C93AAEE00C5F400 /* logo2.png */,
+				1D7D2C581C93A96700C5F400 /* logo.jpg */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7C85341C937DC9008309B7 /* LojasViewController.xib in Resources */,
+				1D7D2C5B1C93AAEE00C5F400 /* logo2.png in Resources */,
+				1D7D2C591C93A96700C5F400 /* logo.jpg in Resources */,
+				1D24936B1C9799C300B3B748 /* LojaCell.xib in Resources */,
+				1D2493661C97973300B3B748 /* IMG_0055.PNG in Resources */,
 				1D7C85251C937A0C008309B7 /* LaunchScreen.storyboard in Resources */,
 				1D7C85221C937A0C008309B7 /* Assets.xcassets in Resources */,
 				1D7C85201C937A0C008309B7 /* Main.storyboard in Resources */,
@@ -151,7 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7C851D1C937A0C008309B7 /* ViewController.m in Sources */,
+				1D7D2C5D1C945D7600C5F400 /* Lojas.m in Sources */,
 				1D7C851A1C937A0C008309B7 /* AppDelegate.m in Sources */,
+				1D2493691C97999600B3B748 /* LojaCell.m in Sources */,
+				1D7C85331C937DC9008309B7 /* LojasViewController.m in Sources */,
 				1D7C85171C937A0C008309B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PartiuShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Heleno.PartiuShopping;
@@ -275,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PartiuShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Heleno.PartiuShopping;
@@ -301,6 +349,7 @@
 				1D7C852B1C937A0C008309B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

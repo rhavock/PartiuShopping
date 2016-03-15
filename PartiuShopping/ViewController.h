@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LojasViewController.h"
 
 @interface ViewController : UIViewController
 
+-(IBAction)Pesquisar;
 
 @end
 

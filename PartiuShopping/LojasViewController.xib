@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10115" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LojasViewController">
+            <connections>
+                <outlet property="txt" destination="o6d-kd-jsj" id="NkO-OR-Fmb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="nAl-GJ-xU9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado da pesquisa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m8-HR-SBz">
+                    <rect key="frame" x="213" y="30" width="173" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-kd-jsj" userLabel="txt">
+                    <rect key="frame" x="92" y="71" width="353" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cqn-Ho-WLm">
+                    <rect key="frame" x="29" y="105" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cLW-g1-QMr"/>
+                        <outlet property="delegate" destination="-1" id="Dct-zR-8vU"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5m8-HR-SBz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Oe-sw-9us"/>
+                <constraint firstItem="Cqn-Ho-WLm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Avb-3a-Pms"/>
+                <constraint firstAttribute="trailing" secondItem="Cqn-Ho-WLm" secondAttribute="trailing" constant="10" id="Y06-8z-MgP"/>
+                <constraint firstItem="5m8-HR-SBz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Z56-7a-R8D"/>
+                <constraint firstItem="Cqn-Ho-WLm" firstAttribute="top" secondItem="o6d-kd-jsj" secondAttribute="bottom" constant="10" id="deP-E1-bok"/>
+                <constraint firstAttribute="bottom" secondItem="Cqn-Ho-WLm" secondAttribute="bottom" constant="10" id="nfE-q5-iqU"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

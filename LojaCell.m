@@ -10,17 +10,29 @@
 
 @implementation LojaCell
 
-@synthesize cv = _cv;
-@synthesize Contato = _Contato;
-@synthesize Nome = _Nome;
-@synthesize Shopping = _Shopping;
-@synthesize Funcionamento = _Funcionamento;
-@synthesize Logo=_Logo;
 
--(id)init{
-    self = [super init];
-    return self;
+@synthesize Contato;
+@synthesize Nome;
+@synthesize Shopping;
+@synthesize Funcionamento;
+@synthesize Logo;
+@synthesize mapa;
+
+
+
+- (void) setup: (Lojas*) loja {
+    Nome.text = [loja Nome];
+    Shopping.text = [loja Shopping];
+    Funcionamento.text = [loja Funcionamento];
+    Logo.image = [UIImage imageNamed:[loja Logo]];
+    Contato.text = [loja Contato];
+    mapa.tag = [loja Id];
+    
 }
-
+- (IBAction)mapa_tapped:(id)sender{
+    UIButton *btn = (UIButton*)sender;
+    
+        NSLog(@"Papai passou aqui!");
+}
 
 @end

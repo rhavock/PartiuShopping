@@ -1,22 +1,21 @@
 //
-//  Lojas.m
+//  LojaModel.m
 //  PartiuShopping
 //
-//  Created by Rodrigo Heleno on 3/12/16.
+//  Created by Rodrigo Heleno on 3/17/16.
 //  Copyright © 2016 Rodrigo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Lojas.h"
+#import "LojaModel.h"
 
-@implementation Lojas
+@implementation LojaModel
 
-@synthesize Nome;
-@synthesize Shopping;
 @synthesize Contato;
 @synthesize Funcionamento;
 @synthesize Id;
-
-
+@synthesize Logo;
+@synthesize Nome;
+@synthesize Shopping;
 
 @end

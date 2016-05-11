@@ -10,7 +10,8 @@
 
 @interface LojasViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,weak) IBOutlet UILabel *txt;
-@property (nonatomic,retain)IBOutlet UITableView *table;
+@property (nonatomic, weak) IBOutlet UILabel *txt;
+@property (nonatomic, weak) IBOutlet UITableView *table;
+@property (nonatomic, strong) NSArray* listaLojas;
 
 @end

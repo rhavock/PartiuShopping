@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15E64a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o segmento da loja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gY5-iE-h79">
+                                <rect key="frame" x="30" y="355" width="540" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-OG-Z1E">
+                                <rect key="frame" x="30" y="393" width="540" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9x-r2-DoW">
+                                <rect key="frame" x="236" y="491" width="88" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kji-ZH-VGR"/>
+                                    <constraint firstAttribute="width" constant="88" id="wuf-fA-KTb"/>
+                                </constraints>
+                                <state key="normal" title="Pesquisar">
+                                    <color key="titleColor" red="1" green="0.25882352941176467" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Pesquisar" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtY-62-nbf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o nome da loja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kqk-zm-uSc">
+                                <rect key="frame" x="30" y="317" width="540" height="30"/>
+                                <color key="tintColor" red="1" green="0.92941176470588238" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#PartiuShopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufA-4L-7VJ">
                                 <rect key="frame" x="231" y="10" width="138" height="69"/>
                                 <constraints>
@@ -29,57 +57,25 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o segmento da loja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gY5-iE-h79">
-                                <rect key="frame" x="30" y="300" width="540" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-OG-Z1E">
-                                <rect key="frame" x="30" y="340" width="540" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9x-r2-DoW">
-                                <rect key="frame" x="20" y="420" width="88" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kji-ZH-VGR"/>
-                                    <constraint firstAttribute="width" constant="88" id="wuf-fA-KTb"/>
-                                </constraints>
-                                <state key="normal" title="Pesquisar"/>
-                                <connections>
-                                    <action selector="Pesquisar" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtY-62-nbf"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Mz-UX5">
-                                <rect key="frame" x="175" y="5" width="240" height="237"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Mz-UX5">
+                                <rect key="frame" x="174" y="72" width="240" height="237"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o nome da loja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kqk-zm-uSc">
-                                <rect key="frame" x="30" y="256" width="191" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="5qn-OG-Z1E" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="10" id="1Gz-RU-IpL"/>
-                            <constraint firstItem="Kqk-zm-uSc" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="10" id="6vs-Xa-iS4"/>
-                            <constraint firstItem="t9x-r2-DoW" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" id="7wZ-Ai-Kl0"/>
-                            <constraint firstItem="ufA-4L-7VJ" firstAttribute="top" secondItem="SjG-nU-g1K" secondAttribute="topMargin" constant="10" id="9hR-mM-hTn"/>
-                            <constraint firstItem="gY5-iE-h79" firstAttribute="top" secondItem="SjG-nU-g1K" secondAttribute="topMargin" constant="300" id="FF5-xu-QiB"/>
-                            <constraint firstItem="wna-Mz-UX5" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="IyK-hM-0Li"/>
-                            <constraint firstItem="gY5-iE-h79" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="10" id="KO5-du-PPr"/>
-                            <constraint firstItem="gY5-iE-h79" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="MvR-bG-3YM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5qn-OG-Z1E" secondAttribute="trailing" constant="10" id="Qs8-dF-bFe"/>
-                            <constraint firstItem="ufA-4L-7VJ" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="Vrv-zH-Dme"/>
-                            <constraint firstItem="5qn-OG-Z1E" firstAttribute="top" secondItem="gY5-iE-h79" secondAttribute="bottom" constant="10" id="bit-Wc-zxH"/>
-                            <constraint firstItem="t9x-r2-DoW" firstAttribute="top" secondItem="Kqk-zm-uSc" secondAttribute="bottom" constant="10" id="cN7-H3-Diz"/>
-                            <constraint firstItem="ufA-4L-7VJ" firstAttribute="leading" secondItem="gY5-iE-h79" secondAttribute="trailing" constant="10" id="dWI-b1-Clf"/>
-                            <constraint firstItem="t9x-r2-DoW" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="gVo-o0-Url"/>
-                            <constraint firstItem="5qn-OG-Z1E" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="hPY-19-pRj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kqk-zm-uSc" secondAttribute="trailing" constant="10" id="oTf-K9-a8Y"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t9x-r2-DoW" secondAttribute="trailing" id="ptu-q0-LEH"/>
-                            <constraint firstItem="Kqk-zm-uSc" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="qag-wn-zwM"/>
-                            <constraint firstItem="Kqk-zm-uSc" firstAttribute="top" secondItem="5qn-OG-Z1E" secondAttribute="bottom" constant="10" id="suH-08-JN1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5qn-OG-Z1E" secondAttribute="trailing" constant="5" id="2VG-Aa-1gI"/>
+                            <constraint firstItem="wna-Mz-UX5" firstAttribute="top" secondItem="lu6-FI-waE" secondAttribute="bottom" constant="52" id="5IB-fw-gRt"/>
+                            <constraint firstItem="gY5-iE-h79" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="5" id="C2K-xY-MII"/>
+                            <constraint firstItem="5qn-OG-Z1E" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="5" id="DaL-i0-ayX"/>
+                            <constraint firstItem="5qn-OG-Z1E" firstAttribute="top" secondItem="gY5-iE-h79" secondAttribute="bottom" constant="5" id="EZN-2g-TGO"/>
+                            <constraint firstItem="gY5-iE-h79" firstAttribute="top" secondItem="Kqk-zm-uSc" secondAttribute="bottom" constant="5" id="LY5-2P-IZr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gY5-iE-h79" secondAttribute="trailing" constant="5" id="RFN-qH-ubF"/>
+                            <constraint firstItem="t9x-r2-DoW" firstAttribute="top" secondItem="5qn-OG-Z1E" secondAttribute="bottom" constant="65" id="RmY-jl-NNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kqk-zm-uSc" secondAttribute="trailing" constant="5" id="SBq-GB-znP"/>
+                            <constraint firstItem="wna-Mz-UX5" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="UUq-Mu-OuI"/>
+                            <constraint firstItem="Kqk-zm-uSc" firstAttribute="top" secondItem="wna-Mz-UX5" secondAttribute="bottom" constant="5" id="VTx-RX-VBh"/>
+                            <constraint firstItem="t9x-r2-DoW" firstAttribute="centerX" secondItem="SjG-nU-g1K" secondAttribute="centerX" id="cmA-rP-ZsB"/>
+                            <constraint firstItem="Kqk-zm-uSc" firstAttribute="leading" secondItem="SjG-nU-g1K" secondAttribute="leadingMargin" constant="5" id="r7x-Nr-ydd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">

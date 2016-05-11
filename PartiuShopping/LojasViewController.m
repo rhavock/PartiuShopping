@@ -8,18 +8,24 @@
 
 #import "LojasViewController.h"
 #import "Lojas.h"
+#import "LojaRepositorio.h"
 #import "LojaCell.h"
 
 @implementation LojasViewController
 
-@synthesize txt;
 @synthesize table;
+@synthesize listaLojas;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setListaLojas: [[[LojaRepositorio alloc] init] ListarLojas]];
+    
     table.delegate = self;
     table.dataSource = self;
+    
+    [table reloadData];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -29,33 +35,28 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LojaCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"LojaCell"];
+    LojaCell *cell =  (LojaCell*) [tableView dequeueReusableCellWithIdentifier:@"MinhaCell"];
+    
     if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"LojaCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-        
+        [tableView registerNib:[UINib nibWithNibName:@"LojaCell" bundle:nil] forCellReuseIdentifier:@"MinhaCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"MinhaCell"];
     }
     
-    Lojas *lojas =[[Lojas alloc] init];
-    NSArray *listaLojas = [lojas.ListarLojas objectAtIndex:indexPath.row];
-    [cell.Nome setText:@"Oi"];//((Lojas *)listaLojas).Nome;
-    cell.Shopping.text = @"asda";//((Lojas *)listaLojas).Shopping;
-    cell.Logo.image= [UIImage imageNamed:@"logo.jpg"];
-    //cell.Contato.text =@"adas"; // ((Lojas *)listaLojas).Contato;
-    cell.Funcionamento.text = @"sassa";//((Lojas *)listaLojas).Funcionamento;
-    
-    
+    [cell setup: [listaLojas objectAtIndex:[indexPath row]]];
+   
     return cell;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    Lojas *lojas =[[Lojas alloc] init];
-    NSArray *listaLojas = [lojas ListarLojas];
-    return [listaLojas count];
+    
+    int count = [listaLojas count];
+    NSLog(@"count: %i", count);
+    
+    return count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 78;
+    return 100;
 }
 
 @end

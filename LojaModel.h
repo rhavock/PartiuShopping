@@ -1,13 +1,12 @@
 //
-//  Lojas.h
+//  Header.h
 //  PartiuShopping
 //
-//  Created by Rodrigo Heleno on 3/12/16.
+//  Created by Rodrigo Heleno on 3/17/16.
 //  Copyright © 2016 Rodrigo. All rights reserved.
 //
 
-
-@interface Lojas : NSObject 
+@interface LojaModel : NSObject 
 
 @property (nonatomic) NSNumber *Id;
 @property (nonatomic) NSString *Nome;
@@ -17,6 +16,3 @@
 @property (nonatomic) NSString *Logo;
 
 @end
-
-
-
